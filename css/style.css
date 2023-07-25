@@ -71,6 +71,8 @@ nav a:hover,
 
 .hero-section {
   background-color: var(--navy-blue);
+  width: 1440px;
+  height: 600px;
   text-align: center;
 }
 .hero-section h1 {
@@ -81,6 +83,8 @@ nav a:hover,
   line-height: 1.07;
   letter-spacing: 1.12px;
   max-width: 496px;
+  margin: auto;
+  padding: 188px 0px 20px 0px;
 }
 
 .hero-section button {
@@ -90,11 +94,19 @@ nav a:hover,
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  padding: 20px;
+  border: none;
+  border-radius: 0.5em;
+  margin: 0px 0px 188px;
 }
 .hero-section button:hover {
   background-color: var(--ocean);
 }
 
+.main-article ul {
+  display: flex;
+  margin: 120px 156px;
+}
 .main-article-list-item {
   width: 264px;
 }
@@ -110,6 +122,23 @@ nav a:hover,
   color: var(--slate);
   letter-spacing: 0.32px;
 }
+
+.doing-section {
+  max-width: 1128px;
+  margin: 120px 156px;
+  border: red 2px solid;
+}
+
+.doing-section ul {
+  display: flex;
+  /* margin: auto; */
+  padding: 1px;
+}
+.doing-section ul li {
+  margin: 0px;
+  padding: 0;
+  border: green 4px solid;
+}
 .doing-heading {
   font-size: 36px;
   font-weight: 700;
@@ -117,12 +146,23 @@ nav a:hover,
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: var(--navy-blue);
+  text-align: center;
 }
 
 .team-section {
   background-color: var(--cloud);
+  max-width: 1440px;
 }
 
+.team-section ul {
+  display: flex;
+  border: yellow 5px solid;
+}
+.team-section ul li {
+  padding: 5px;
+  border: orangered 2px solid;
+  margin: 20px;
+}
 .team-section h2 {
   font-size: 36px;
   font-weight: 700;
@@ -147,17 +187,25 @@ nav a:hover,
   background-color: var(--navy-blue);
   color: #f4f4fd;
   font-size: 16px;
+  max-width: 1440px;
+  padding: 101.5px 156px;
+}
+.footer-section a {
+  background-color: ;
 }
 .footer-logo {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+  letter-spacing: 0.54px;
 }
 .footer-studio {
   color: var(--cloud);
 }
 .footer-section p {
   width: 264px;
+  line-height: 24px;
   letter-spacing: 0.02em;
+  color: var(--cloud);
 }
 .list {
   list-style: none;
