@@ -118,7 +118,6 @@ button:hover {
 /* Hero section */
 .hero-section {
   background-color: var(--navy-blue);
-  width: auto;
   max-height: 600px;
   text-align: center;
   justify-content: center;
@@ -133,9 +132,6 @@ button:hover {
   letter-spacing: 1.12px;
   max-width: 492px;
   margin: 0 auto;
-
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-section button {
@@ -152,8 +148,17 @@ button:hover {
   background-color: var(--ocean);
 }
 /* Sekcja głownego artykułu */
-.main-article {
+
+.main-article ul li {
+  margin: 0 24px;
 }
+.main-article ul li:first-child {
+  margin: 0 auto;
+}
+.main-article ul li:last-child {
+  margin: 0 auto;
+}
+
 .main-article ul {
   display: flex;
 }
