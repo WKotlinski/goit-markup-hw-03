@@ -13,15 +13,34 @@ body {
   text-decoration: none;
 }
 
+html {
+  overflow: auto;
+  box-sizing: border-box;
+}
+.container {
+  width: 1158px;
+}
 a {
   text-decoration: none;
 }
 
 button {
   font-family: "Roboto", sans-serif;
+  border: none;
 }
+
+ul {
+  list-style: none;
+}
+
 .highlight {
   color: var(--iris);
+}
+
+header .container,
+header .container nav ul,
+header .container ul {
+  display: flex;
 }
 
 .header-studio {
@@ -31,27 +50,40 @@ button {
   font-family: "Raleway", sans-serif;
   line-height: 1.16;
   letter-spacing: 0.54px;
+  margin: 24px 76px 25.5px 156px;
 }
 
 .logo-header {
   color: var(--navy-blue);
 }
 
-.nav-list {
-  list-style: none;
-}
-.nav-list li a {
+nav li a {
   color: var(--slate);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  margin: 24px 40px 24px 76px;
+  background-color: green;
 }
+
+nav a:focus {
+  color: var(--ocean);
+}
+.nav-list-item:focus {
+  color: var(--ocean);
+}
+nav a:hover {
+  color: var(--ocean);
+}
+
 .contacts-list li a {
   color: var(--slate);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
+}
+header .container li {
 }
 
 .contacts-list li a:hover {
@@ -60,13 +92,6 @@ button {
 
 button:hover {
   cursor: pointer;
-}
-nav a:focus {
-  color: var(--ocean);
-}
-nav a:hover,
-.contacts-list:hover {
-  color: var(--ocean);
 }
 
 .hero-section {
@@ -95,9 +120,8 @@ nav a:hover,
   line-height: 1.5;
   letter-spacing: 0.64px;
   padding: 20px;
-  border: none;
   border-radius: 0.5em;
-  margin: 0px 0px 188px;
+  margin: 48px 0px 188px;
 }
 .hero-section button:hover {
   background-color: var(--ocean);
@@ -131,13 +155,12 @@ nav a:hover,
 
 .doing-section ul {
   display: flex;
-  /* margin: auto; */
-  padding: 1px;
+  margin: 0px 20px;
+  padding: 1px 1px;
 }
 .doing-section ul li {
   margin: 0px;
-  padding: 0;
-  border: green 4px solid;
+  padding: 0px;
 }
 .doing-heading {
   font-size: 36px;
@@ -152,6 +175,7 @@ nav a:hover,
 .team-section {
   background-color: var(--cloud);
   max-width: 1440px;
+  text-align: center;
 }
 
 .team-section ul {
@@ -190,9 +214,7 @@ nav a:hover,
   max-width: 1440px;
   padding: 101.5px 156px;
 }
-.footer-section a {
-  background-color: ;
-}
+
 .footer-logo {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
@@ -207,10 +229,10 @@ nav a:hover,
   letter-spacing: 0.02em;
   color: var(--cloud);
 }
-.list {
-  list-style: none;
-}
 
+.filter-list li {
+  display: inline;
+}
 .filter-list-item button {
   color: var(--iris);
   background-color: var(--cornflower);
@@ -218,6 +240,7 @@ nav a:hover,
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  border-radius: 4px;
 }
 
 .filter-list-item button:hover {
@@ -225,7 +248,13 @@ nav a:hover,
   background-color: var(--ocean);
   cursor: pointer;
 }
-
+.photo-section {
+  max-width: 1440px;
+  border: red 2px solid;
+}
+/* .photo-section ul {
+  display: ;
+} */
 .photo-section h1 {
   color: white;
 }
