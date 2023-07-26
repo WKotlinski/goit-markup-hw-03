@@ -18,8 +18,10 @@ html {
   box-sizing: border-box;
 }
 .container {
-  width: 1158px;
+  width: 1440px;
+  margin: 0 auto;
   border: red 0.5ex solid;
+  padding-left: 156px;
 }
 
 .section {
@@ -57,7 +59,7 @@ header .container ul {
   line-height: 1.16;
   letter-spacing: 0.54px;
   align-items: center;
-  margin: 24px 0px 0px 156px;
+  margin: 24px 0px 0px 0px;
 }
 
 .logo-header {
@@ -66,7 +68,7 @@ header .container ul {
 
 nav ul {
   background-color: green;
-  margin: 24px 0px 24px 76px;
+  margin: 24px 0px 0px 76px;
   padding-left: 0px;
 }
 nav ul li {
@@ -78,7 +80,7 @@ nav ul li:first-child {
 }
 nav ul li:last-child {
   background-color: salmon;
-  margin-right: 0px;
+  margin-right: 1px;
 }
 nav a {
   color: var(--slate);
@@ -100,11 +102,12 @@ nav a:hover {
 
 .contacts-list {
   background-color: green;
-  margin: 24px 0px 24px 76px;
+  margin: 24px 156px 24px 0px;
   padding-left: 0px;
 }
-.contacts-list li:last-child {
+.contacts-list li {
   background-color: red;
+  margin-inline: 40px;
 }
 .contacts-list li a {
   color: var(--slate);
@@ -123,9 +126,11 @@ button:hover {
 
 .hero-section {
   background-color: var(--navy-blue);
-  width: 1440px;
+  width: auto;
   height: 600px;
   text-align: center;
+  justify-content: center;
+  padding: 188px 472px 292px;
 }
 .hero-section h1 {
   color: #ffffff;
@@ -134,7 +139,11 @@ button:hover {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   line-height: 1.07;
   letter-spacing: 1.12px;
-  max-width: 496px;
+  max-width: 492px;
+  margin: 0 auto;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-section button {
