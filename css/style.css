@@ -19,6 +19,12 @@ html {
 }
 .container {
   width: 1158px;
+  border: red 0.5ex solid;
+}
+
+.section {
+  padding: 120px 0px;
+  border: green 0.5ex solid;
 }
 a {
   text-decoration: none;
@@ -50,21 +56,36 @@ header .container ul {
   font-family: "Raleway", sans-serif;
   line-height: 1.16;
   letter-spacing: 0.54px;
-  margin: 24px 76px 25.5px 156px;
+  align-items: center;
+  margin: 24px 0px 0px 156px;
 }
 
 .logo-header {
   color: var(--navy-blue);
 }
 
-nav li a {
+nav ul {
+  background-color: green;
+  margin: 24px 0px 24px 76px;
+  padding-left: 0px;
+}
+nav ul li {
+  margin-inline: 40px;
+}
+nav ul li:first-child {
+  background-color: salmon;
+  margin-left: 0px;
+}
+nav ul li:last-child {
+  background-color: salmon;
+  margin-right: 0px;
+}
+nav a {
   color: var(--slate);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
-  margin: 24px 40px 24px 76px;
-  background-color: green;
 }
 
 nav a:focus {
@@ -77,13 +98,19 @@ nav a:hover {
   color: var(--ocean);
 }
 
+.contacts-list {
+  background-color: green;
+  margin: 24px 0px 24px 76px;
+  padding-left: 0px;
+}
+.contacts-list li:last-child {
+  background-color: red;
+}
 .contacts-list li a {
   color: var(--slate);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.32px;
-}
-header .container li {
 }
 
 .contacts-list li a:hover {
@@ -108,8 +135,6 @@ button:hover {
   line-height: 1.07;
   letter-spacing: 1.12px;
   max-width: 496px;
-  margin: auto;
-  padding: 188px 0px 20px 0px;
 }
 
 .hero-section button {
@@ -119,17 +144,12 @@ button:hover {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  padding: 20px;
-  border-radius: 0.5em;
-  margin: 48px 0px 188px;
 }
 .hero-section button:hover {
   background-color: var(--ocean);
 }
 
 .main-article ul {
-  display: flex;
-  margin: 120px 156px;
 }
 .main-article-list-item {
   width: 264px;
@@ -147,21 +167,6 @@ button:hover {
   letter-spacing: 0.32px;
 }
 
-.doing-section {
-  max-width: 1128px;
-  margin: 120px 156px;
-  border: red 2px solid;
-}
-
-.doing-section ul {
-  display: flex;
-  margin: 0px 20px;
-  padding: 1px 1px;
-}
-.doing-section ul li {
-  margin: 0px;
-  padding: 0px;
-}
 .doing-heading {
   font-size: 36px;
   font-weight: 700;
@@ -169,7 +174,6 @@ button:hover {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: var(--navy-blue);
-  text-align: center;
 }
 
 .team-section {
@@ -178,15 +182,6 @@ button:hover {
   text-align: center;
 }
 
-.team-section ul {
-  display: flex;
-  border: yellow 5px solid;
-}
-.team-section ul li {
-  padding: 5px;
-  border: orangered 2px solid;
-  margin: 20px;
-}
 .team-section h2 {
   font-size: 36px;
   font-weight: 700;
@@ -212,7 +207,6 @@ button:hover {
   color: #f4f4fd;
   font-size: 16px;
   max-width: 1440px;
-  padding: 101.5px 156px;
 }
 
 .footer-logo {
@@ -230,9 +224,6 @@ button:hover {
   color: var(--cloud);
 }
 
-.filter-list li {
-  display: inline;
-}
 .filter-list-item button {
   color: var(--iris);
   background-color: var(--cornflower);
@@ -240,7 +231,6 @@ button:hover {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  border-radius: 4px;
 }
 
 .filter-list-item button:hover {
@@ -252,9 +242,7 @@ button:hover {
   max-width: 1440px;
   border: red 2px solid;
 }
-/* .photo-section ul {
-  display: ;
-} */
+
 .photo-section h1 {
   color: white;
 }
