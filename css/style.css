@@ -21,14 +21,11 @@ html {
 .container {
   width: 1440px;
   margin: 0 auto;
-  border: red 0.5ex solid;
-  padding-left: 156px;
-  padding-right: 156px;
+  /* border: red 2px solid; */
 }
 
 .section {
   padding: 120px 0px;
-  border: green 0.5ex solid;
 }
 a {
   text-decoration: none;
@@ -53,7 +50,9 @@ header .container nav ul,
 header .container ul {
   display: flex;
 }
-
+header .container {
+  border-bottom: 1px var(--cornflower) solid;
+}
 .header-studio {
   text-transform: uppercase;
   font-size: 18px;
@@ -62,7 +61,7 @@ header .container ul {
   line-height: 1.16;
   letter-spacing: 0.54px;
   align-items: center;
-  margin: 24px 0px 0px 0px;
+  margin: 24px 0px 0px 20px;
 }
 
 nav ul {
@@ -115,13 +114,21 @@ nav a:hover {
 button:hover {
   cursor: pointer;
 }
+figure {
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.16);
+}
+
 /* Hero section */
 .hero-section {
   background-color: var(--navy-blue);
   max-height: 600px;
+  max-width: 1440px;
   text-align: center;
   justify-content: center;
-  padding: 188px 472px 292px;
+  padding: 188px 0px;
+  margin: 0 auto;
 }
 .hero-section h1 {
   color: #ffffff;
@@ -149,9 +156,6 @@ button:hover {
 }
 /* Sekcja głownego artykułu */
 
-.main-article ul li {
-  margin: 0 24px;
-}
 .main-article ul li:first-child {
   margin: 0 auto;
 }
@@ -179,6 +183,13 @@ button:hover {
   letter-spacing: 0.32px;
 }
 
+/* Sekcja poswiacona what are we doing */
+.doing-section {
+  padding-top: 0;
+}
+.doing-section ul {
+  display: flex;
+}
 .doing-heading {
   font-size: 36px;
   font-weight: 700;
@@ -186,14 +197,32 @@ button:hover {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: var(--navy-blue);
-}
-
-.team-section {
-  background-color: var(--cloud);
-  max-width: 1440px;
   text-align: center;
 }
 
+.main-article ul li {
+  margin: 0 24px;
+}
+
+.doing-section ul li:first-child {
+  margin: 0 auto;
+}
+.doing-section ul li:last-child {
+  margin: 0 auto;
+}
+.team-section {
+  background-color: var(--cloud);
+  width: 1440px;
+  text-align: center;
+  margin: 0 auto;
+}
+.team-section ul li {
+  margin: auto;
+}
+
+.team-section ul {
+  display: flex;
+}
 .team-section h2 {
   font-size: 36px;
   font-weight: 700;
@@ -219,6 +248,7 @@ button:hover {
   color: #f4f4fd;
   font-size: 16px;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer-logo {
@@ -243,6 +273,8 @@ button:hover {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  padding: 12px 24px;
+  margin-bottom: 72px;
 }
 
 .filter-list-item button:hover {
@@ -250,13 +282,28 @@ button:hover {
   background-color: var(--ocean);
   cursor: pointer;
 }
+
+.filter-list {
+  text-align: center;
+}
 .photo-section {
   max-width: 1440px;
-  border: red 2px solid;
+  margin: 0 auto;
+}
+.photo-section ul:nth-child(2) li {
+  display: inline;
+  margin: 0 auto;
+}
+.photo-section ul:nth-child(3) {
+  display: flex;
+  flex-wrap: wrap;
+}
+.photo-section ul li {
+  margin: 0 auto;
 }
 
 .photo-section h1 {
-  color: white;
+  display: none;
 }
 .photo-section h3 {
   color: var(--navy-blue);
@@ -267,4 +314,10 @@ button:hover {
 }
 .photo-section p {
   color: var(--slate);
+}
+.photo-section-list {
+}
+.photo-section-list li {
+  border: 1px var(--cornflower) solid;
+  background-color: white;
 }
