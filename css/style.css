@@ -19,9 +19,9 @@ html {
 }
 
 .container {
-  width: 1440px;
+  width: 1158px;
   margin: 0 auto;
-  /* border: red 2px solid; */
+  border: red 2px solid;
 }
 
 .section {
@@ -61,19 +61,21 @@ header .container {
   line-height: 1.16;
   letter-spacing: 0.54px;
   align-items: center;
-  margin: 24px 0px 0px 20px;
+  margin-top: 24px;
 }
 
 nav ul {
-  margin: 24px 0px 0px 76px;
+  margin-top: 24px;
 }
 nav ul li {
   margin-inline: 40px;
 }
 
 .contacts-list {
-  margin: 24px 0px 24px 0px;
-  margin-left: 332px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 24px 0px;
+  margin-left: auto;
 }
 .contacts-list li:not(:last-child) {
   margin-inline: 40px;
@@ -156,13 +158,6 @@ figure {
 }
 /* Sekcja głownego artykułu */
 
-.main-article ul li:first-child {
-  margin: 0 auto;
-}
-.main-article ul li:last-child {
-  margin: 0 auto;
-}
-
 .main-article ul {
   display: flex;
 }
@@ -204,12 +199,6 @@ figure {
   margin: 0 24px;
 }
 
-.doing-section ul li:first-child {
-  margin: 0 auto;
-}
-.doing-section ul li:last-child {
-  margin: 0 auto;
-}
 .team-section {
   background-color: var(--cloud);
   width: 1440px;
@@ -217,11 +206,13 @@ figure {
   margin: 0 auto;
 }
 .team-section ul li {
-  margin: auto;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .team-section ul {
-  display: flex;
 }
 .team-section h2 {
   font-size: 36px;
@@ -297,6 +288,8 @@ figure {
 .photo-section ul:nth-child(3) {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 50px;
+  column-gap: 10px;
 }
 .photo-section ul li {
   margin: 0 auto;
@@ -315,8 +308,7 @@ figure {
 .photo-section p {
   color: var(--slate);
 }
-.photo-section-list {
-}
+
 .photo-section-list li {
   border: 1px var(--cornflower) solid;
   background-color: white;
