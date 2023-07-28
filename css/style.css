@@ -11,6 +11,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
   text-decoration: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.02em;
 }
 
 html {
@@ -35,12 +38,41 @@ button {
   font-family: "Roboto", sans-serif;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
 }
 
 .highlight {
@@ -54,6 +86,7 @@ header .container ul {
 }
 header .container {
   border-bottom: 1px var(--cornflower) solid;
+  align-items: center;
 }
 .header-studio {
   text-transform: uppercase;
@@ -63,14 +96,11 @@ header .container {
   line-height: 1.16;
   letter-spacing: 0.54px;
   align-items: center;
-  margin-top: 24px;
 }
 
 nav ul {
-  margin-top: 24px;
-}
-nav ul li {
-  margin-inline: 40px;
+  gap: 40px;
+  margin-left: 76px;
 }
 
 .contacts-list {
@@ -115,9 +145,6 @@ nav a:hover {
   color: var(--ocean);
 }
 
-button:hover {
-  cursor: pointer;
-}
 .team-section figure {
   margin: 0;
   background-color: white;
@@ -128,9 +155,11 @@ button:hover {
 /* Hero section */
 .hero-section {
   background-color: var(--navy-blue);
-  max-height: 600px;
+  /* max-height: 600px;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 auto; */
+  padding: 188px 0;
+  text-align: center;
 }
 .hero-section * {
   display: flex;
@@ -146,6 +175,7 @@ button:hover {
   line-height: 1.07;
   letter-spacing: 1.12px;
   max-width: 492px;
+  margin: 0 auto;
 }
 
 .hero-section button {
@@ -165,6 +195,7 @@ button:hover {
 
 .main-article ul {
   display: flex;
+  gap: 24px;
 }
 
 .main-article-list-item {
@@ -181,6 +212,7 @@ button:hover {
   font-size: 16px;
   color: var(--slate);
   letter-spacing: 0.32px;
+  line-height: 1.5;
 }
 
 /* Sekcja poswiacona what are we doing */
@@ -200,10 +232,7 @@ button:hover {
   text-transform: capitalize;
   color: var(--navy-blue);
   text-align: center;
-}
-
-.main-article ul li {
-  margin: 0 24px;
+  margin: 0 0 72px 0;
 }
 
 .team-section {
@@ -226,6 +255,7 @@ button:hover {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 .team-section h3 {
   font-size: 20px;
@@ -276,30 +306,20 @@ button:hover {
 .filter-list-item button:hover {
   color: white;
   background-color: var(--ocean);
-  cursor: pointer;
 }
 
-.filter-list {
-  text-align: center;
-}
-
-.photo-section ul:nth-child(2) li {
-  display: inline;
-  margin: 0 12px;
-}
 .photo-section ul:nth-child(3) {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 24px;
   row-gap: 48px;
-  padding: 0;
 }
-.photo-section-list img {
-  display: block;
-}
-.photo-section h1 {
-  display: none;
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 .photo-section h3 {
   color: var(--navy-blue);
@@ -307,8 +327,8 @@ button:hover {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  margin-top: 0;
 }
+
 .photo-section p {
   color: var(--slate);
 }
