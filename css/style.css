@@ -22,7 +22,6 @@ html {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  border: red 3px dashed;
 }
 
 .section {
@@ -296,7 +295,9 @@ button:hover {
   row-gap: 48px;
   padding: 0;
 }
-
+.photo-section-list img {
+  display: block;
+}
 .photo-section h1 {
   display: none;
 }
