@@ -21,7 +21,6 @@ html {
 .container {
   width: 1158px;
   margin: 0 auto;
-  border: red 2px dashed;
 }
 
 .section {
@@ -39,6 +38,8 @@ button {
 
 ul {
   list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .highlight {
@@ -126,7 +127,7 @@ button:hover {
 /* Hero section */
 .hero-section {
   background-color: var(--navy-blue);
-  height: 600px;
+  max-height: 600px;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -187,6 +188,7 @@ button:hover {
 }
 .doing-section ul {
   display: flex;
+  justify-content: space-between;
   column-gap: 24px;
 }
 .doing-heading {
@@ -209,17 +211,13 @@ button:hover {
   text-align: center;
   margin: 0 auto;
 }
-.team-section ul li {
-  display: inline-flex;
-  flex-direction: column;
+.team-section ul {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  column-gap: 22px;
-  background-color: white;
+  gap: 22px;
 }
 
-.team-section ul {
-}
 .team-section h2 {
   font-size: 36px;
   font-weight: 700;
@@ -292,11 +290,9 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  column-gap: 22px;
+  column-gap: 24px;
   row-gap: 48px;
   padding: 0;
-}
-.photo-section ul li {
 }
 
 .photo-section h1 {
@@ -308,15 +304,16 @@ button:hover {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
+  margin-top: 0;
 }
 .photo-section p {
   color: var(--slate);
 }
 
-.photo-section-list li {
+.photo-section-discription {
   border-right: 1px var(--cornflower) solid;
   border-bottom: 1px var(--cornflower) solid;
   border-left: 1px var(--cornflower) solid;
-
+  padding: 32px 0px;
   background-color: white;
 }
