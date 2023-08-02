@@ -53,8 +53,8 @@ p {
 ul,
 ol {
   list-style: none;
-  margin-left: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -230,6 +230,7 @@ nav a:hover {
 .team-section {
   background-color: var(--cloud);
   margin: 0 auto;
+  /* text-align: center; */
 }
 .team-section ul {
   display: flex;
@@ -261,7 +262,7 @@ nav a:hover {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  margin: 8px;
+  margin-bottom: 8px;
 }
 .team-section p {
   color: var(--slate);
@@ -281,8 +282,8 @@ nav a:hover {
   letter-spacing: 0.54px;
   line-height: 1.16;
   display: block;
-  margin: 16px;
-  margin-left: 0;
+  margin-bottom: 16px;
+
   color: var(--cloud);
 }
 
@@ -302,7 +303,6 @@ nav a:hover {
   line-height: 1.5;
   letter-spacing: 0.64px;
   padding: 12px 24px;
-  margin: 96px 0 72px;
 }
 
 .filter-list-item button:hover {
@@ -313,7 +313,6 @@ nav a:hover {
 .photo-section ul:nth-child(3) {
   display: flex;
   flex-wrap: wrap;
-
   column-gap: 24px;
   row-gap: 48px;
 }
@@ -322,6 +321,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-bottom: 72px;
 }
 .photo-section h3 {
   color: var(--navy-blue);
@@ -335,7 +335,10 @@ nav a:hover {
 .photo-section p {
   color: var(--slate);
 }
-
+.photo-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .photo-section-discription {
   border-right: 1px var(--cornflower) solid;
   border-bottom: 1px var(--cornflower) solid;
